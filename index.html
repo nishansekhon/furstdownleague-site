@@ -202,6 +202,7 @@
   /* ---------- from the engine ---------- */
   .engine-sec{background:var(--surface2)}
   .result-card{background:var(--navy2);color:#f2ecdd;border-radius:14px;padding:24px 26px;box-shadow:var(--shadow)}
+  .result-stack{display:grid;gap:18px}
   .result-card .rlabel{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--tan);font-weight:700;font-size:15px}
   .score-line{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0 4px}
   .score-line .team-name{font-family:"Barlow Condensed",sans-serif;font-size:clamp(24px,4vw,34px);font-weight:800;text-transform:uppercase;line-height:1.05}
@@ -309,30 +310,65 @@
 
 <section id="engine" class="engine-sec">
   <div class="wrap">
-    <div class="sec-head"><span class="tag">From the Engine</span><h2>The First Result Is In</h2></div>
-    <p class="lede">The FDL Engine has played its first match — a preseason exhibition ahead of Kickoff Weekend. This result is engine-official: simulated by the engine, published with its seed, exactly as it came out.</p>
+    <div class="sec-head"><span class="tag">From the Engine</span><h2>Four Exhibitions In</h2></div>
+    <p class="lede">The FDL Engine has played four preseason exhibitions ahead of Kickoff Weekend — and a rivalry is already writing itself. Every result is engine-official: simulated by the engine, published with its seed, exactly as it came out.</p>
+    <div class="result-stack">
     <div class="result-card">
-      <div class="rlabel">Preseason Exhibition · Oct 24, 2026</div>
+      <div class="rlabel">Exhibition 1 · Episode 1</div>
       <div class="score-line">
         <span class="team-name">Texas Terriers</span><span class="score">14</span><span class="dash">—</span><span class="score">7</span><span class="team-name">Michigan Mutts</span>
       </div>
       <p class="mvp-line"><b>MVP — Zip</b> · 229 yards · 2 TDs</p>
       <p class="seed-line">FDL Engine v0.1 · Seed 20260314 · Results are simulated by the engine and published with their seed — nobody writes winners by hand.</p>
     </div>
+    <div class="result-card">
+      <div class="rlabel">Exhibition 2 · The Rematch · Episode 2</div>
+      <div class="score-line">
+        <span class="team-name">Texas Terriers</span><span class="score">28</span><span class="dash">—</span><span class="score">7</span><span class="team-name">Michigan Mutts</span>
+      </div>
+      <p class="mvp-line"><b>MVP — Zip</b> · again · 4 TDs</p>
+      <p class="seed-line">FDL Engine · Seed 20260321 · Simulated by the engine and published with its seed.</p>
+    </div>
+    <div class="result-card">
+      <div class="rlabel">Exhibition 3 · The New Rival · Episode 3</div>
+      <div class="score-line">
+        <span class="team-name">Michigan Mutts</span><span class="score">14</span><span class="dash">—</span><span class="score">7</span><span class="team-name">Windy City Whippets</span>
+      </div>
+      <p class="mvp-line"><b>MVP — Tank</b> · his first win, and his first MVP</p>
+      <p class="mvp-line">Gust's debut — 200 yards · 1 TD</p>
+      <p class="seed-line">FDL Engine · Seed 20260328 · Simulated by the engine and published with its seed.</p>
+    </div>
+    <div class="result-card">
+      <div class="rlabel">Exhibition 4 · Fastest vs Fastest · Episode 4</div>
+      <div class="score-line">
+        <span class="team-name">Texas Terriers</span><span class="score">28</span><span class="dash">—</span><span class="score">21</span><span class="team-name">Windy City Whippets</span>
+      </div>
+      <p class="mvp-line"><b>MVP — Zip</b> · three straight</p>
+      <p class="mvp-line">Gust — 253 yards in the loss</p>
+      <p class="seed-line">FDL Engine · Seed 20260404 · Simulated by the engine and published with its seed.</p>
+    </div>
+    </div>
     <div class="card-grid">
       <article class="pcard">
         <h3>Zip <span>#7 · Texas Terriers · Captain</span></h3>
         <p class="plabel">Memory</p>
-        <p class="memory">&ldquo;MVP — Speed 97 &rarr; 98.&rdquo;</p>
+        <p class="memory">&ldquo;Three straight MVPs — and Speed up to 99.&rdquo;</p>
         <p class="plabel">Career scorecard</p>
-        <div class="scorecard"><div><b>1</b><span>Game</span></div><div><b>229</b><span>Yards</span></div><div><b>2</b><span>TDs</span></div><div><b>1</b><span>MVP</span></div></div>
+        <div class="scorecard"><div><b>3</b><span>Games</span></div><div><b>739</b><span>Yards</span></div><div><b>10</b><span>TDs</span></div><div><b>3</b><span>MVPs</span></div></div>
       </article>
       <article class="pcard">
         <h3>Tank <span>#00 · Michigan Mutts · Captain</span></h3>
         <p class="plabel">Memory</p>
-        <p class="memory">&ldquo;Remembers this loss.&rdquo;</p>
+        <p class="memory">&ldquo;First win — and first MVP — vs. the Whippets.&rdquo;</p>
         <p class="plabel">Career scorecard</p>
-        <div class="scorecard"><div><b>1</b><span>Game</span></div><div><b>218</b><span>Yards</span></div><div><b>1</b><span>TD</span></div><div><b>0</b><span>MVP</span></div></div>
+        <div class="scorecard"><div><b>3</b><span>Games</span></div><div><b>651</b><span>Yards</span></div><div><b>4</b><span>TDs</span></div><div><b>1</b><span>MVP</span></div></div>
+      </article>
+      <article class="pcard">
+        <h3>Gust <span>#9 · Windy City Whippets · Captain</span></h3>
+        <p class="plabel">Memory</p>
+        <p class="memory">&ldquo;Remembers this loss.&rdquo; &ldquo;Remembers this loss.&rdquo;</p>
+        <p class="plabel">Career scorecard</p>
+        <div class="scorecard"><div><b>2</b><span>Games</span></div><div><b>453</b><span>Yards</span></div><div><b>4</b><span>TDs</span></div><div><b>0</b><span>MVPs</span></div></div>
       </article>
     </div>
   </div>
@@ -352,7 +388,7 @@
           <p>The wall the Mutts are built around. Tank doesn't run around anyone — he runs the shortest route there is, straight ahead, and the shortest route usually wins. Wears 00 because, as he puts it, "that's how many yards you get past me."</p>
           <div class="core"><span class="corelabel">AI Core</span><span class="chip">SPD<b>62</b></span><span class="chip">STR<b>98</b></span><span class="chip">AGI<b>55</b></span><span class="chip">STA<b>90</b></span></div>
           <p class="quirk">&ldquo;Never celebrates. Just walks back to the line.&rdquo;</p>
-          <div class="memlog"><b>Memory Log</b>Oct 24 — Lost 7–14 to Texas Terriers. Remembers this loss.</div>
+          <div class="memlog"><b>Memory Log</b>Latest — Beat the Windy City Whippets 14–7 (Exhibition 3). First win. First MVP.</div>
         </div>
       </article>
       <article class="spot">
@@ -362,9 +398,9 @@
           <h3>Zip</h3>
           <p class="meta">Texas Terriers · Captain · Running Back</p>
           <p>The fastest four paws in the league. Zip has never been caught from behind — mostly because by the time you turn around, the play is already a highlight. The Terriers' whole offense is one sentence long: get Zip the ball in open field.</p>
-          <div class="core"><span class="corelabel">AI Core</span><span class="chip">SPD<b>98</b></span><span class="chip">STR<b>48</b></span><span class="chip">AGI<b>95</b></span><span class="chip">STA<b>78</b></span></div>
+          <div class="core"><span class="corelabel">AI Core</span><span class="chip">SPD<b>99</b></span><span class="chip">STR<b>48</b></span><span class="chip">AGI<b>95</b></span><span class="chip">STA<b>78</b></span></div>
           <p class="quirk">&ldquo;Talks to the ball before every snap.&rdquo;</p>
-          <div class="memlog"><b>Memory Log</b>Oct 24 — Beat Michigan Mutts 14–7. MVP.</div>
+          <div class="memlog"><b>Memory Log</b>Latest — Three straight MVPs (Exhibitions 1, 2 &amp; 4). Speed up to 99.</div>
         </div>
       </article>
     </div>
@@ -434,18 +470,18 @@
         </div>
       </div>
       <div>
-        <table class="stand" aria-label="Preseason standings">
+        <table class="stand" aria-label="League standings">
           <thead><tr><th scope="col">Team</th><th scope="col">W</th><th scope="col">L</th></tr></thead>
           <tbody>
-            <tr><td>Michigan Mutts</td><td>0</td><td>0</td></tr>
-            <tr><td>Texas Terriers</td><td>0</td><td>0</td></tr>
-            <tr><td>California Corgis</td><td>0</td><td>0</td></tr>
-            <tr><td>Windy City Whippets</td><td>0</td><td>0</td></tr>
-            <tr><td>Boston Beagles</td><td>0</td><td>0</td></tr>
-            <tr><td>Seattle Shepherds</td><td>0</td><td>0</td></tr>
+            <tr><td>Texas Terriers</td><td>3</td><td>0</td></tr>
+            <tr><td>Michigan Mutts</td><td>1</td><td>2</td></tr>
+            <tr><td>Windy City Whippets</td><td>0</td><td>2</td></tr>
+            <tr><td>California Corgis <span style="color:var(--muted);font-weight:500;font-size:13.5px;white-space:nowrap">· yet to debut</span></td><td>0</td><td>0</td></tr>
+            <tr><td>Boston Beagles <span style="color:var(--muted);font-weight:500;font-size:13.5px;white-space:nowrap">· yet to debut</span></td><td>0</td><td>0</td></tr>
+            <tr><td>Seattle Shepherds <span style="color:var(--muted);font-weight:500;font-size:13.5px;white-space:nowrap">· yet to debut</span></td><td>0</td><td>0</td></tr>
           </tbody>
         </table>
-        <p class="stand-note">Preseason standings: the first snap hasn't happened yet, so everybody starts equal — and everybody's season is still perfect. Table updates after every game week.</p>
+        <p class="stand-note">Exhibition standings after four games: the Terriers are unbeaten at 3–0, and the Corgis, Beagles, and Shepherds are still waiting to debut. Table updates after every game week.</p>
       </div>
     </div>
   </div>
@@ -553,7 +589,7 @@ var TEAMS = [
   { id:"terriers", name:"Texas Terriers", city:"Texas", home:"The Dust Bowl — Texas", colors:["#12a5b4","#ffffff"], primary:"#0e7f8c", bright:"#0e7f8c", accent:"#ffffff",
     captain:"Zip", style:"Pure speed. The Terriers stretch the field until it tears, then run through the tear.",
     roster:[
-      ["7","Zip","Captain · Running Back","Terrier",[98,48,95,78],"Talks to the ball before every snap."],
+      ["7","Zip","Captain · Running Back","Terrier",[99,48,95,78],"Talks to the ball before every snap."],
       ["10","Rio","Quarterback","Toy Fox Terrier",[84,40,90,74],""],
       ["1","Pico","Wide Receiver","Chihuahua",[94,30,96,68],""],
       ["44","Diesel","Linebacker","Jack Russell Terrier",[85,66,84,90],""],
