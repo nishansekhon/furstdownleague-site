@@ -241,6 +241,26 @@
   .press .diary .dhead span{color:var(--tan-d)}
   .press .diary .dquote{font-style:italic;font-size:16.5px;margin:2px 0 0}
 
+  /* ---------- power rankings / record book ---------- */
+  .rank-list{display:grid;gap:16px}
+  .rank{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:start}
+  .rank-num{font-family:"Barlow Condensed",sans-serif;font-size:64px;font-weight:800;line-height:.85;color:var(--tan-d);text-align:center;border-right:2px solid var(--line);padding-right:18px}
+  .rank-num span{display:block;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px;font-weight:700}
+  .rank-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+  .rank-head h3{font-size:32px;font-weight:800}
+  .rank-head .team{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:16.5px;color:var(--tan-d)}
+  .rank .note{margin:10px 0 0;font-size:16px}
+  .rank .scorecard{margin-top:10px;justify-content:flex-start}
+  .debut{margin-top:18px;background:var(--surface2);border:1px dashed var(--tan-d);border-radius:12px;padding:16px 20px;font-size:16px}
+  .debut b{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:14.5px;color:var(--tan-d);display:block;margin-bottom:4px}
+  .rank-foot{color:var(--muted);font-size:13.5px;font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.09em;margin:16px 0 0}
+  @media (max-width:560px){
+    .rank{grid-template-columns:1fr;gap:10px;padding:20px}
+    .rank-num{text-align:left;border-right:none;border-bottom:2px solid var(--line);padding:0 0 10px;display:flex;align-items:baseline;gap:10px}
+    .rank-num span{margin-top:0}
+    .rank .scorecard{gap:12px}
+  }
+
   footer{background:var(--navy2);color:#aebbd4;padding:34px 0;font-size:14.5px}
   footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
   footer b{color:#f2ecdd;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em}
@@ -460,6 +480,41 @@
         <p>Tank's diary is never edited. Whatever happens next, it gets added — not rewritten. That is what makes it a career.</p>
       </article>
     </div>
+  </div>
+</section>
+
+<section id="rankings" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Exhibitions 1–4</span><h2>Power Rankings — The Record Book</h2></div>
+    <p class="lede">Ranked on wins, touchdowns, yards and MVP awards — from the engine's official record. Updated after every exhibition.</p>
+    <div class="rank-list">
+      <article class="rank">
+        <div class="rank-num">1<span>Rank</span></div>
+        <div>
+          <div class="rank-head"><h3>Zip</h3><span class="team">Texas Terriers</span></div>
+          <div class="scorecard"><div><b>3</b><span>Games</span></div><div><b>739</b><span>Yards</span></div><div><b>10</b><span>TDs</span></div><div><b>3</b><span>MVPs</span></div><div><b>3–0</b><span>Team Record</span></div></div>
+          <p class="note">Three straight MVPs. Speed maxed at 99. The crown is his until someone takes it.</p>
+        </div>
+      </article>
+      <article class="rank">
+        <div class="rank-num">2<span>Rank</span></div>
+        <div>
+          <div class="rank-head"><h3>Tank</h3><span class="team">Michigan Mutts</span></div>
+          <div class="scorecard"><div><b>3</b><span>Games</span></div><div><b>651</b><span>Yards</span></div><div><b>4</b><span>TDs</span></div><div><b>1</b><span>MVP</span></div><div><b>1–2</b><span>Team Record</span></div></div>
+          <p class="note">The league's power crown. Started 0–2, then won his first game and his first MVP back to back.</p>
+        </div>
+      </article>
+      <article class="rank">
+        <div class="rank-num">3<span>Rank</span></div>
+        <div>
+          <div class="rank-head"><h3>Gust</h3><span class="team">Windy City Whippets</span></div>
+          <div class="scorecard"><div><b>2</b><span>Games</span></div><div><b>453</b><span>Yards</span></div><div><b>4</b><span>TDs</span></div><div><b>0</b><span>MVPs</span></div><div><b>0–2</b><span>Team Record</span></div></div>
+          <p class="note">Winless and still third — 253 yards in the shootout will do that. The most dangerous 0–2 captain alive.</p>
+        </div>
+      </article>
+    </div>
+    <div class="debut"><b>Yet to Debut</b>SUNNY (California Corgis) · HARBOR (Boston Beagles) · RAIN (Seattle Shepherds) — unranked until they play.</div>
+    <p class="rank-foot">Last updated after Exhibition 4 · Engine seed 20260404.</p>
   </div>
 </section>
 
