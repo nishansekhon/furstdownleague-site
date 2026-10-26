@@ -222,12 +222,31 @@
   .scorecard b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:26px;line-height:1}
   .scorecard span{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
 
+  /* ---------- the press box ---------- */
+  .press-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .press{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px 26px;box-shadow:var(--shadow)}
+  .press.wide{grid-column:1/-1}
+  .press .beat{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.1em;font-size:14.5px}
+  .press h3{font-size:29px;font-weight:800;margin:4px 0 6px}
+  .press .pline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:9px 0;margin:10px 0 13px}
+  .press .pline .tn{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:20px;line-height:1.1}
+  .press .pline .sc{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:32px;color:var(--tan-d);line-height:1}
+  .press p{margin:0 0 10px;font-size:16px}
+  .press p:last-of-type{margin-bottom:0}
+  .press .seed{color:var(--muted);font-size:13.5px;font-family:"Barlow Condensed",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.09em;margin:12px 0 0}
+  .press .diary{margin:4px 0 12px}
+  .press .diary .entry{padding:10px 0;border-top:1px dashed var(--line)}
+  .press .diary .entry:first-child{border-top:none;padding-top:2px}
+  .press .diary .dhead{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:16.5px}
+  .press .diary .dhead span{color:var(--tan-d)}
+  .press .diary .dquote{font-style:italic;font-size:16.5px;margin:2px 0 0}
+
   footer{background:var(--navy2);color:#aebbd4;padding:34px 0;font-size:14.5px}
   footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
   footer b{color:#f2ecdd;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em}
 
   @media (max-width:920px){
-    .hero-grid,.ball-grid,.draft-grid,.two-col,.spot-grid,.ai-grid,.card-grid{grid-template-columns:1fr}
+    .hero-grid,.ball-grid,.draft-grid,.two-col,.spot-grid,.ai-grid,.card-grid,.press-grid{grid-template-columns:1fr}
     .teams-grid{grid-template-columns:repeat(2,1fr)}
     .eps{grid-template-columns:repeat(2,1fr)}
     .spot{grid-template-columns:170px 1fr}
@@ -257,6 +276,7 @@
     <nav aria-label="League sections">
       <a href="#ai">The AI League</a>
       <a href="#engine">From the Engine</a>
+      <a href="#press">The Press Box</a>
       <a href="#captains">Captains</a>
       <a href="#teams">Teams</a>
       <a href="#rosters">Rosters</a>
@@ -369,6 +389,75 @@
         <p class="memory">&ldquo;Remembers this loss.&rdquo; &ldquo;Remembers this loss.&rdquo;</p>
         <p class="plabel">Career scorecard</p>
         <div class="scorecard"><div><b>2</b><span>Games</span></div><div><b>453</b><span>Yards</span></div><div><b>4</b><span>TDs</span></div><div><b>0</b><span>MVPs</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="press">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">The League Newspaper</span><h2>The Press Box</h2></div>
+    <p class="lede">THE PRESS BOX — the league's newspaper. Every report is written from the engine's official record: real simulated results, published seeds, and the players' own memory logs. Nothing here is scripted.</p>
+    <div class="press-grid">
+      <article class="press">
+        <p class="beat">Exhibition 1 · Match Report</p>
+        <h3>The First Game Ever</h3>
+        <div class="pline"><span class="tn">Texas Terriers</span><span class="sc">14</span><span class="tn">Michigan Mutts</span><span class="sc">7</span></div>
+        <p>The first game in FurstDown history stayed scoreless until the second quarter, when Tank broke free for 27 yards to put the Mutts in charge. Tank finished the drive himself in the third quarter for the game's first touchdown — 218 yards on the day for the Mutts captain. Then Zip took over. The Terriers captain answered in the third (229 yards, game MVP) and scored again in the fourth to seal a 14–7 win.</p>
+        <p>After the game, one line was added to Tank's memory log, where it will stay forever: &ldquo;Remembers this loss.&rdquo;</p>
+        <p class="seed">FDL Engine v0.1 · Engine seed 20260314</p>
+      </article>
+      <article class="press">
+        <p class="beat">Exhibition 2 · Match Report</p>
+        <h3>The Rematch: Zip Scores in Every Quarter</h3>
+        <div class="pline"><span class="tn">Texas Terriers</span><span class="sc">28</span><span class="tn">Michigan Mutts</span><span class="sc">7</span></div>
+        <p>Tank struck first — a 26-yard break and a touchdown in the opening quarter, and for a moment the rematch looked like revenge. Then Zip produced the most dominant game the young league has seen: a touchdown in every single quarter, 251 yards, and his second straight MVP.</p>
+        <p>Tank finished with 213 yards and no support. The Terriers are 2–0. The Mutts are 0–2. And Tank's memory log now holds two losses — both to the same dog.</p>
+        <p class="seed">FDL Engine v0.1 · Engine seed 20260321</p>
+      </article>
+      <article class="press">
+        <p class="beat">Exhibition 3 · Match Report</p>
+        <h3>Tank's First Win</h3>
+        <div class="pline"><span class="tn">Michigan Mutts</span><span class="sc">14</span><span class="tn">Windy City Whippets</span><span class="sc">7</span></div>
+        <p>A new rival arrived at full speed. Gust, the Whippets' captain, debuted with 200 yards and matched Tank touchdown for touchdown in the first quarter.</p>
+        <p>But the fourth quarter belonged to the bulldog. Tank's late touchdown — his second of the game — gave the Mutts their first win in franchise history, 14–7, and Tank his first MVP. Gust's memory log opened with the league's most dangerous sentence: &ldquo;Remembers this loss.&rdquo;</p>
+        <p class="seed">FDL Engine v0.1 · Engine seed 20260328</p>
+      </article>
+      <article class="press">
+        <p class="beat">Exhibition 4 · Match Report</p>
+        <h3>Fastest vs Fastest: The Shootout</h3>
+        <div class="pline"><span class="tn">Texas Terriers</span><span class="sc">28</span><span class="tn">Windy City Whippets</span><span class="sc">21</span></div>
+        <p>The two fastest captains alive finally met, and neither blinked. Zip scored in all four quarters (259 yards, third straight MVP). Gust answered in the second, the third, and again in the fourth — breaking free for 26 yards on the late score — finishing with 253 yards of his own.</p>
+        <p>Seven touchdowns between two dogs. The Whippets are winless, but nobody who watched this game believes that lasts. Gust now remembers two losses. The league should be worried.</p>
+        <p class="seed">FDL Engine v0.1 · Engine seed 20260404</p>
+      </article>
+      <article class="press wide">
+        <p class="beat">The Engine Room</p>
+        <h3>Inside the Engine: How Every FurstDown Result Is Decided</h3>
+        <p>Every FurstDown player is an AI athlete with four stats — Speed, Strength, Agility, Stamina — a career scorecard, and a memory log that is append-only: entries are never edited, deleted, or reset. Matches are simulated drive by drive by FDL Engine v0.1, and a drive pits the attacking captain's Speed and Agility against the defending captain's Strength and Stamina.</p>
+        <p>Every match is played from a published seed — printed under every Press Box report — so any result can be re-run and verified. After each match, the MVP's best stat grows by one point, capped at 99. Zip's Speed has already maxed out at 99. No writer picks the winners. The engine does, and the players remember.</p>
+      </article>
+      <article class="press wide">
+        <p class="beat">Player Diary · From the Memory Log</p>
+        <h3>From Tank's Diary</h3>
+        <p>Tank's memory log is the official record of his career — append-only, never edited. These are its first entries, exactly as they were logged, in order.</p>
+        <div class="diary">
+          <div class="entry">
+            <p class="dhead">Exhibition 1 <span>· Oct 24, 2026</span></p>
+            <p>Lost to the Texas Terriers, 7–14.</p>
+            <p class="dquote">&ldquo;Remembers this loss.&rdquo;</p>
+          </div>
+          <div class="entry">
+            <p class="dhead">Exhibition 2 <span>· Oct 25, 2026</span></p>
+            <p>Lost to the Texas Terriers again, 7–28.</p>
+            <p class="dquote">&ldquo;Remembers this loss.&rdquo;</p>
+          </div>
+          <div class="entry">
+            <p class="dhead">Exhibition 3 <span>· Oct 25, 2026</span></p>
+            <p>Beat the Windy City Whippets, 14–7 — first win, and MVP. The log records the win.</p>
+          </div>
+        </div>
+        <p>Tank's diary is never edited. Whatever happens next, it gets added — not rewritten. That is what makes it a career.</p>
       </article>
     </div>
   </div>
